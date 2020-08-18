@@ -52,14 +52,17 @@ export default class VirtualKeyboardDetector extends EventTarget {
 defaultInstance = new VirtualKeyboardDetector();
 
 class VirtualKeyboardEvent extends CustomEvent<any> {
-	private _visible:boolean;
+	readonly visible:boolean;
 	
 	constructor(visible) {
 		super(VirtualKeyboardDetector.TYPE);
-		this._visible = visible;
+		this.visible = visible;
 	}
 	
-	get visible() {
-		return this._visible;
-	}
+	// TODO: getter doesn't work on mobile safari?!
+	// private _visible:boolean;
+	// get visible() {
+	// 	console.log('get visible');
+	// 	return this._visible;
+	// }
 }
