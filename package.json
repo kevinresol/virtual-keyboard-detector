@@ -1,0 +1,19 @@
+{
+  "name": "virtual-keyboard-detector",
+  "version": "0.1.0",
+  "description": "Virtual Keyboard Detector",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "Kevin Leung",
+  "license": "MIT",
+  "scripts": {
+    "watch": "tsc -w",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@ungap/event-target": "^0.2.2"
+  },
+  "devDependencies": {
+    "typescript": "^3.9.7"
+  }
+}
